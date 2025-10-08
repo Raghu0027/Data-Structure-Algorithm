@@ -1,13 +1,14 @@
-public class Fibonachi {
- public static void main(String[] args) {
-    System.out.println(fibo(7));
- }
- static int fibo(int n){
-     // base condition
-     if(n<2){
-        return n;
-     }
-
-    return fibo(n-1) + fibo(n-2); 
- }
+class Fibonachi {
+    public static int fib(int n) {
+        if(n<2){
+            return n;
+        }
+        return fib(n-1)+fib(n-2);
+    }
+    public static void main(String[]args){
+        int n=5;
+        for(int i=0; i<=n; i++){
+            System.out.println(Fibonachi.fib(i));
+        }
+    }
 }
